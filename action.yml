@@ -1,4 +1,4 @@
-name: gat
+name: Github Action Test Automation
 author: therussiankid92
 description: Bring the power of test automation to your actions and workflows
 inputs:

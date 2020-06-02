@@ -1,5 +1,5 @@
 # gat
-The Github Action Tester makes assertions over the outputs of github workflows or actions super simple.  
+The Github Action Test automation makes assertions over the outputs of github workflows or actions super simple.  
 Bring the power of test automation to your actions and workflows: ```gat``` makes it easier for you to build and test reliable ci pipelines for your team.  
   
 _btw: did you know :cat2: gat is cat in catalan?_    
