@@ -21,7 +21,7 @@ const assert = (assertion, expected, actual) => {
       default:
         throw Error('Assertion Not In Dictionary')
     }
-    return { asserted: true, message: ':heart_eyes_cat: Test Passed' }
+    return { asserted: true, message: '😻 Test Passed' }
   } catch (e) {
     return { asserted: false, message: e.message }
   }

@@ -3,6 +3,7 @@ const { throwGithubError, getAssertion, getExpected, getActual } = require('../i
 const { assert } = require('../domain/assertions')
 
 const main = () => {
+  console.log('🐈 Running gat! Meow!')
   const assertion = getAssertion()
   const expected = getExpected()
   const actual = getActual()

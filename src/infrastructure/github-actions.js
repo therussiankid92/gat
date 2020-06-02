@@ -32,7 +32,7 @@ const getExpected = () => {
  * @param {string} message
  */
 const throwGithubError = (message) => {
-  core.setFailed(`:crying_cat_face: ${message}`)
+  core.setFailed(`😿 ${message}`)
 }
 
 module.exports = {

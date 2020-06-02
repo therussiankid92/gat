@@ -46,6 +46,6 @@ describe('throwGithubError', () => {
     // eslint-disable-next-line global-require
     const core = require('@actions/core')
     throwGithubError('message')
-    expect(core.setFailed).toHaveBeenCalledWith(':crying_cat_face: message')
+    expect(core.setFailed).toHaveBeenCalledWith('😿 message')
   })
 })

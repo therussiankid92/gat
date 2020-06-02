@@ -6,7 +6,7 @@ _btw: did you know :cat2: gat is cat in catalan?_
   
 ## Usage  
 ### Input Variables     
-```assertion```: Mandatory, assertion to be performed (eg should.be.true, equals). Check readme for full dictionary.  
+```assertion```: Mandatory, assertion to be performed (eg should.be.true, equals).  
 ```expected```: Mandatory, the value outputed by your action/workflow. This shall be compared with the expected.  
 ```actual```: Mandatory, the value you expect your function to have. This would be compared against your actual     
    

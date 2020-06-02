@@ -3,16 +3,19 @@ describe('assert', () => {
   beforeEach(() => {
     jest.resetModules()
   })
+  const caseTrue = { asserted: true, message: '😻 Test Passed' }
+  const caseFalse = { asserted: false, message: "expected 'false' to equal 'true'" }
+  const caseAsertionNotInDict =
   it('should.equal: should return true if actual and expected equal', () => {
-    expect(assert('should.equal', 'true', 'true')).toEqual({ asserted: true, message: ':heart_eyes_cat: Test Passed' })
+    expect(assert('should.equal', 'true', 'true')).toEqual(caseTrue)
   })
   it('should.equal: should return false if actual and expected not equal', () => {
-    expect(assert('should.equal', 'true', 'false')).toEqual({ asserted: false, message: "expected 'false' to equal 'true'" })
-  })
+    expect(assert('should.equal', 'true', 'false')).toEqual(caseFalse) })
   it('should.not.equal: should return true if actual and expected not equal', () => {
-    expect(assert('should.not.equal', 'true', 'false')).toEqual({ asserted: true, message: ':heart_eyes_cat: Test Passed' })
+    expect(assert('should.not.equal', 'true', 'false')).toEqual(caseTrue)
   })
   it('should return false if assertion not defined', () => {
-    expect(assert('should.gat', 'true', 'false')).toEqual({ asserted: false, message: 'Assertion Not In Dictionary' })
+    const caseAsertionNotInDict = { asserted: false, message: "Assertion Not In Dictionary" }
+        expect(assert('should.gat', 'true', 'false')).toEqual(caseAsertionNotInDict)
   })
 })
