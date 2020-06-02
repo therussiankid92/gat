@@ -1,0 +1,20 @@
+name: gat
+author: therussiankid92
+description: Bring the power of test automation to your actions and workflows
+inputs:
+  assertion:
+    description: assertion to be performed (eg should.be.true, equals). Check readme for full dictionary.
+    required: true
+  actual:
+    description: the value outputed by your action/workflow. This shall be compared with the expected.
+    required: true
+  expected:
+    description: the value you expect your function to have. This would be compared against your actual
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'check-square'
+  color: 'red'
+

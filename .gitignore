@@ -1,0 +1,5 @@
+.idea
+.env
+node_modules
+yarn-error.log
+.DS_store

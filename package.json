@@ -1,0 +1,34 @@
+{
+  "name": "gat",
+  "version": "1.0.0",
+  "main": "src/application/index.js",
+  "description": "Bring the power of test automation to your actions and workflows",
+  "license": "MIT",
+  "author": "therussiankid92",
+  "scripts": {
+    "start": "node src/application/index.js",
+    "test": "yarn jest",
+    "distribute": "yarn ncc build src/application/index.js",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.2.0",
+    "dotenv": "^8.2.0",
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.2",
+    "prettier-standard": "^16.3.0"
+  }
+}

@@ -1,0 +1,22 @@
+name: Happy Path - Github Inputs
+on:
+  push:
+  pull_request:
+    branches:
+      - master
+jobs:
+  test-gat:
+    runs-on: ubuntu-latest
+    name: test-gat
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Check true equals true
+        uses: ./
+        id: gat
+        with:
+          assertion: should.equal
+          expected: true
+          actual: true
+
+
