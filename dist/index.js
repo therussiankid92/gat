@@ -1612,7 +1612,7 @@ const assert = (assertion, expected, actual) => {
       default:
         throw Error('Assertion Not In Dictionary')
     }
-    return { asserted: true, message: ':heart_eyes_cat: Test Passed' }
+    return { asserted: true, message: '😻 Test Passed' }
   } catch (e) {
     return { asserted: false, message: e.message }
   }
@@ -6542,7 +6542,7 @@ const getExpected = () => {
  * @param {string} message
  */
 const throwGithubError = (message) => {
-  core.setFailed(`:crying_cat_face: ${message}`)
+  core.setFailed(`😿 ${message}`)
 }
 
 module.exports = {
@@ -7758,6 +7758,7 @@ const { throwGithubError, getAssertion, getExpected, getActual } = __webpack_req
 const { assert } = __webpack_require__(230)
 
 const main = () => {
+  console.log('🐈 Running gat! Meow!')
   const assertion = getAssertion()
   const expected = getExpected()
   const actual = getActual()
