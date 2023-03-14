@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0",
-    "dotenv": "^8.2.0",
+    "@actions/github": "^5.1.1",
+    "dotenv": "^16.0.3",
     "chai": "^4.3.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^8.7.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-promise": "^4.3.1",
